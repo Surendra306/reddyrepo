@@ -1,0 +1,95 @@
+Table A
+
+0
+
+0
+
+1
+
+null
+
+Table B
+
+0
+0
+1
+
+null 
+
+I want know the count how many rows display through all type of joins?
+
+Table:emptable
+
+empid empname
+
+1     te
+
+2     v
+
+3    null
+
+select empid case when empname isnull then 'NOTFOUND
+
+else empname end as empname from emptable;
+
+select empid COALESCE (empname, 'NOT FOUND) as emaname from emptable;
+
+retrieve data have 3 highest salary?
+retrieve data have 2 highest salary?
+what is with column what is the use?
+What is CTE?
+what are window functions AND DIFFRRENCE BETWWEN row_number,rank,dense_rank?
+retreive data salary dept wise both sql and pyspark?
+How do you remove duplicates in databricks?
+To get orders from the last 6 months along with customer details, you have Orders and Customers tables.
+you have table in the employee and manger id i want whose manger of employee?
+Difference between union and union all?
+Difference between NORMALISATION AND DENORMALISATION?
+dIFFERENCE BETWWEEN SUBQUERY AND CO-RELATED SUB-QUERY?
+difference between coalesce and isnull?
+difference between count(*),count(1),count(column)
+How do handle duplicates and null values?
+How come you KNOW your data is clean?
+
+How do optimization in spark?
+How do you handle big data?
+which CSV AND PARAQUET which file better to read and write better optimization and why?
+what is delta table?
+How do handle if the pipeline is failure in the middle Ex:you have 1000 records to be processed it processed only 100 how do you handle?
+How do you handle dataloader if dont have watermark that you dont have dateortimestamp how do you do?
+How do you setup ADLS?
+How do you handle if suppose file not exists in ADLS storage how do you handle ADF/pyspark to read that?
+How do you create cluster what is use?
+What is data skew?
+what is broadcast joins?
+what Delta lake and delta table what is the use?
+how to create connection databricks to deltalake or datastorage?
+why we are using spark?
+how to create a notebook?
+what is the difference between coalesce and re-partition
+
+1.scenario i have 9 pipelines process trucate and deloading in one table all pipelines are triggred at same time but one of the pipline not insert any records?
+
+Ans: Implement Staging Tables (Best Practice) 
+Instead of all 9 pipelines writing directly to the final table:
+Each pipeline truncates and loads into its own dedicated staging table (e.g., target_stage_1, target_stage_2, etc.).
+After all 9 finish, run a final process to INSERT/MERGE data from all 9 staging tables into the final target table.
+Result: No contention during data loading
+
+How do you test your code PYtest?
+In a notebook you n number of cell having which cell invoke first if you run all the notebook?
+How to create a connection to connect when you DB is onprem to azure ADLS location?
+If you have 5 table in to copy how do do and further table count may be exceed how do you handle create a pipe line ?
+How do you handle the errors in pipeline failures?
+difference between parameter and Variable?
+How to create connection between on-prime SFTP to your ADLS SHIR?
+juilis.ai tool use for data analaysis like key insights,Execl,ppt,3d visualization
+https://chatgpt.com/g/g-6777e9aedde081918f7a59a47081fff8-ai-for-techies-resume-bot-resume hack
+yoodli Ai-interview prep
+comet for apply high pay jobs
+
+
+
+
+
+
